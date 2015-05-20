@@ -54,11 +54,11 @@ section {
   font-weight: bold;
 }
 
-.slide section:nth-child(1):after{ content:'^';}
-.slide section:nth-child(2):after{ content:'^';}
-.slide section:nth-child(3):after{ content:'^';}
-.slide section:nth-child(4):after{ content:'^';}
-.slide section:nth-child(5):after{ content:'^';}
+.slide section:nth-child(1):after{ content:'H';}
+.slide section:nth-child(2):after{ content:'JP';}
+.slide section:nth-child(3):after{ content:'SG';}
+.slide section:nth-child(4):after{ content:'TS';}
+.slide section:nth-child(5):after{ content:'GF';}
 
 .slide section:target {
   background:#ccff66;
@@ -110,7 +110,7 @@ background:#ccff66;
 }
 
 .slide section:after{
-  top:-60px;
+  top:-70px;
   left: 554px:
 }
 .slide section:target:after{
