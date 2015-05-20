@@ -1,0 +1,118 @@
+html {
+  background-image: url(http://fc08.deviantart.net/fs71/f/2012/254/5/2/heisenberg_by_majoh-d5ef7wd.jpg);
+  background-size: cover;
+}
+
+body {
+  font-family: Helvetica;
+}
+
+div {
+  border-radius: 15px;
+  border: 2px solid black;
+}
+
+section {
+  border-radius: 15px;
+}
+.header{
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 3em;
+  text-align: center;
+  color: #d6d6d6;
+}
+
+.slide {
+  width: 574px;
+  overflow: hidden;
+  margin: 25px auto;
+  color: #66cc;
+  background: #3399FF;
+  padding: 10px;
+}
+
+.slide section {
+  float: left;
+  overflow: hidden;
+  cursor: pointer;
+  background: #0000cc;
+  margin: 3px;
+}
+
+.slide section:hover {
+  background: #00ffff;
+}
+
+.slide section p {
+  display: none;
+}
+
+.slide section:after{
+  position: relative;
+  font-size: 24px;
+  color: #000;
+  font-weight: bold;
+}
+
+.slide section:nth-child(1):after{ content:'^';}
+.slide section:nth-child(2):after{ content:'^';}
+.slide section:nth-child(3):after{ content:'^';}
+.slide section:nth-child(4):after{ content:'^';}
+.slide section:nth-child(5):after{ content:'^';}
+
+.slide section:target {
+  background:#ccff66;
+  padding: 10px;
+}
+.slide section:target:hover {
+background:#ccff66;
+}
+.slide section:target h3 {
+  width:100%;
+}
+.slide section:target h3 a{
+  color:#660033;
+  padding:0;
+  text-align: center;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 1.25em;
+}
+.slide section:target p {
+  display:block;
+}
+.slide section h3 a{
+  padding: 8px 10px;
+  display: block;
+  font-size: 16px;
+  font-weight: normal;
+  color: #660033;
+  text-decoration: none;
+  text-align: center;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 1.25em;
+}
+
+.slide section {
+  width:100%;
+  height: 40px;
+  transition:height 0.2s ease-out;
+}
+
+.slide :target{
+  height: 250px;
+  width: 97%;
+}
+
+.slide section h3 {
+  position:relative;
+  left:0;
+  top:-15px;
+}
+
+.slide section:after{
+  top:-60px;
+  left: 554px:
+}
+.slide section:target:after{
+  left:-9999px;
+}
